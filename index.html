@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+  <title>Nurridin Wiranda</title>
+
+  <meta property="og:title" content="Nurriding Wiranda" />
+
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="canonical" href="//" />
+
+  <meta property="og:url" content="//" />
+
+  <meta name="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+  <meta name="theme-color" content="#4F1AE2" />
+
+  <meta property="og:site_name" content="Atom Template" />
+
+  <meta property="og:image" content="//assets/img/social.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:site" content="@tailwindmade" />
+
+  <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="preload" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+  <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+</head>
+
+
+<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+
+  <div id="main" class="relative">
+    <div x-data="{
+    triggerNavItem(id) {
+        $scroll(id)
+    },
+    triggerMobileNavItem(id) {
+        mobileMenu = false;
+        this.triggerNavItem(id)
+    }
+}">
+      <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
+  ">
+        <div class="container flex items-center justify-end">
+          <div class="hidden lg:block">
+            <ul class="flex items-center">
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#about')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">
+                  About</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#research')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Research Interest</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#skills')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Skills</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#education')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Education Background</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#workexp')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Work Experience</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#researchgrants')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Research</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#project')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Project</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#membership')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Membership</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#scholarship')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Scholarship</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#VOLUNTEERING')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Volunteering</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#books')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold text-white">Books</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+            </ul>
+          </div>
+          <div class="block lg:hidden">
+            <button @click="mobileMenu = true">
+              <i class="bx bx-menu text-4xl text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+        :class="{ 'opacity-100 pointer-events-auto': mobileMenu }">
+        <div class="absolute right-0 min-h-screen w-2/3 bg-[#4F1AE2] py-4 px-8 shadow md:w-1/3">
+          <button class="absolute top-0 right-0 mt-4 mr-4" @click="mobileMenu = false">
+            <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+          </button>
+
+          <ul class="mt-8 flex flex-col">
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#about')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">About</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#research')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Research Interest</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#skills')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Skills</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#education')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Education Background</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#workexp')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Work Experience</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#researchgrants')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Research</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#project')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Project</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#membership')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Membership</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#scholarship')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Scholarship</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#VOLUNTEERING')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Volunteering</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#books')"
+                class="cursor-pointer pt-0.5 font-header font-semibold text-white">Books</span>
+
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="relative bg-cover bg-center bg-no-repeat py-8"
+          style="background-image: url(/assets/img/bg-hero.jpg)">
+          <div
+            class="absolute inset-0 z-20 bg-gradient-to-r from-[#4F1AE2] to-[#54A1F3]/70 bg-cover bg-center bg-no-repeat">
+          </div>
+
+          <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
+            <div class="flex flex-col items-center justify-center lg:flex-row">
+              <div class="rounded-full border-8 border-white/50 shadow-xl">
+                <img src="/assets/img/sergio-de-paula.jpg"
+                  class="h-48 w-48 rounded-full sm:h-56 sm:w-56 bg-auto bg-center bg-no-repeat" alt="author" />
+              </div>
+              <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+                <h1 class="text-center font-header text-4xl font-bold text-white sm:text-left sm:text-5xl md:text-6xl">
+                  Hello I'm Nurrudin Wiranda!
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-grey-50" id="about">
+          <div class="container flex flex-col items-center px-20 py-10 lg:flex-row">
+            <div class="w-full text-center">
+              <h2 class="font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+                Who am I?
+              </h2>
+              <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+                I'm Nurrudin Wiranda, M.Cs
+              </h4>
+              <p class="pt-6 font-body leading-relaxed text-grey-20 text-justify">
+                I was born in Palangkaraya on March 15, 1990. I studied S1 (S.Kom) at STMIK
+                Amikom Yogyakarta and earned a Master of Computer Science (M.Cs) degree from the Department of
+                Computer Science, UGM, Yogyakarta in 2016. My main research interests are Machine Learning,
+                Mobile Computing and Embedded Systems. I am active as a researcher and lecturer, where many
+                research publications in the form of scientific papers and articles have been published in various
+                conference proceedings, scientific journals, and portals, both nationally and internationally.
+              </p>
+              <p class="pt-6 font-body leading-relaxed text-grey-20 text-justify">
+                I have experience of winning several research grants; holds some software copyrights; published a
+                number of books and articles in Indonesian and international papers in the form of proceedings and
+                journals. I am a professional member of scientific associations IEEE Computer Society (97956108),
+                INDOCEISS (2201-32000451), and APTIKOM (AP-22.00015). I am also a founder of Birran Cipta
+                Informatika (birran.com), a company engaged in software development, enterprise architecture,
+                professional training and certification center.
+              </p>
+              <p class="pt-6 font-body leading-relaxed text-grey-20 text-justify">
+                I have experience as a software developer in various government and private institutions, such as
+                PDAM Kandangan, PT PLN UPDK Barito, PT PLN UPT KalselTeng, PT PJBS East Java, PT PJBS
+                Kuala Kapuas, IAIN Palangkaraya, Universitas Proklamasi 45 Yogyakarta, etc
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col px-20 py-10 lg:flex-row">
+            <div class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3">
+              <div class="flex items-center">
+                <p class="font-body font-bold uppercase text-grey-40 lg:text-lg">
+                  My Phone
+                </p>
+              </div>
+              <p class="pt-2 text-left font-body font-bold text-[#4F1AE2] lg:text-lg">
+                (+62) 852 4889 9975
+              </p>
+            </div>
+            <div
+              class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+              <div class="flex items-center">
+                <p class="font-body font-bold uppercase text-grey-40 lg:text-lg">
+                  My Email
+                </p>
+              </div>
+              <p class="pt-2 text-left font-body font-bold text-[#4F1AE2] lg:text-lg">
+                nurrudin.wd@ulm.ac.id
+              </p>
+            </div>
+            <div
+              class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2">
+              <div class="flex items-center">
+                <p class="font-body font-bold uppercase text-grey-40 lg:text-lg">
+                  My ORCID ID
+                </p>
+              </div>
+              <p class="pt-2 text-left font-body font-bold text-[#4F1AE2] lg:text-lg">
+                10000-0001-7830-0431
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-16 md:py-20" id="research">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          Research Interest
+        </h2>
+        <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+          <div class="group rounded px-8 py-12 shadow hover:bg-[#4F1AE2]">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-development-white.svg" alt="development icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-development-black.svg" alt="development icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-[#4F1AE2] group-hover:text-yellow lg:text-xl">
+                Machine Learning
+              </h3>
+              <p class="text-justify text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                Teknologi Machine Learning (ML) adalah mesin yang dikembangkan untuk bisa belajar dengan sendirinya
+                tanpa arahan dari penggunanya
+              </p>
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-[#4F1AE2]">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-[#4F1AE2] group-hover:text-yellow lg:text-xl">
+                Mobile Computing
+              </h3>
+              <p class="text-justify text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                Mobile Computing adalah teknologi perangkat nirkable yang dapat melakukan tugas transmisi data, suara,
+                informasi media lainnya seperti video, tanpa menggunakan media perambat fisik atau kabel, terhubung dan
+                saling berkomunikasi melalui gelombang radio.
+              </p>
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-[#4F1AE2]">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-mobile-white.svg" alt="Mobile Application icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-mobile-black.svg" alt="Mobile Application icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-[#4F1AE2] group-hover:text-yellow lg:text-xl">
+                Embedded Systems
+              </h3>
+              <p class="text-justify text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                Embedded Systems atau sistem tertanam merupakan sistem komputer khusus yang dirancang untuk menjalankan
+                tugas tertentu dan biasanya sistem tersebut tertanam dalam satu kesatuan sistem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-16 md:py-20 bg-grey-50" id="skills">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          Skills
+        </h2>
+        <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+          <div class="group rounded px-8 py-12 shadow hover:bg-[#4F1AE2]">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-development-white.svg" alt="development icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-development-black.svg" alt="development icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-[#4F1AE2] group-hover:text-yellow lg:text-xl">
+                Project Management
+              </h3>
+              <p class="text-justify text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                Project Management adalah metode perencanaan dan pengelolaan sumber daya yang bisa digunakan perusahaan
+                untuk menyelesaikan sebuah proyek.
+              </p>
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-[#4F1AE2]">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-content-white.svg" alt="content marketing icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-content-black.svg" alt="content marketing icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-[#4F1AE2] group-hover:text-yellow lg:text-xl">
+                Programming Fundamentals
+              </h3>
+              <p class="text-justify text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                Programming Fundamental adalah sebuah konsep dimana kamu mempelajari bahasa pemrograman secara
+                terstruktur.
+              </p>
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-[#4F1AE2]">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-mobile-white.svg" alt="Mobile Application icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-mobile-black.svg" alt="Mobile Application icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-[#4F1AE2] group-hover:text-yellow lg:text-xl">
+                Software Engineering
+              </h3>
+              <p class="text-justify text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                Software engineering adalah suatu pendekatan teknologi yang dilakukan secara sistematis, terstruktur dan
+                disiplin.
+              </p>
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-[#4F1AE2]">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-email-white.svg" alt="Email Marketing icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-email-black.svg" alt="Email Marketing icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-[#4F1AE2] group-hover:text-yellow lg:text-xl">
+                Machine Learning Algorithms
+              </h3>
+              <p class="text-justify text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                Machine Learning Algorithms adalah disiplin ilmu yang mencakup perancangan dan pengembangan algoritme
+                yang memungkinkan komputer untuk mengembangkan perilaku berdasarkan data empiris, seperti dari sensor
+                data basis data.
+              </p>
+            </div>
+          </div>
+          <div class="group rounded px-8 py-12 shadow hover:bg-[#4F1AE2]">
+            <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+              <div class="hidden group-hover:block">
+                <img src="/assets/img/icon-design-white.svg" alt="Theme Design icon" />
+              </div>
+              <div class="block group-hover:hidden">
+                <img src="/assets/img/icon-design-black.svg" alt="Theme Design icon" />
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="pt-8 text-lg font-semibold uppercase text-[#4F1AE2] group-hover:text-yellow lg:text-xl">
+                Basic Skills of Instructional Techniques and Applied Approach
+              </h3>
+              <p class="text-justify text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aperiam mollitia molestias reprehenderit
+                adipisci aliquid illo. Blanditiis similique expedita sunt facilis, eum quo modi quas dolorum veniam
+                aliquid, eaque necessitatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-16 md:py-20" id="education">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          Education Background
+        </h2>
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2009 - 2012</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Bachelor of
+                    Science</span>
+                  <div class="pt-2">
+                    <span class="block font-body text-black">STMIK Amikom Yogyakarta, Indonesia <br>
+                      • Majors: Informatics / Software engineer <br>
+                      • Thesis Title: Implementasi Kinect pada Penerjemah Bahasa
+                      Isyarat [Kinect Implementation in Sign Language Translator]</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2012 - 2016</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Master of Computer
+                      Science</span>
+                    <div class="pt-2">
+                      <span class="block font-body text-black">Universitas Gadjah Mada, Indonesia <br>
+                        • Majors: Electronic and Instrumentation <br>
+                        • Thesis Title:Model Identifikasi Kata Ucapan Tuna Wicara [Speech Identification Model for
+                        Speech Impaired]</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-16 md:py-20 bg-grey-50" id="workexp">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          Work Experience
+        </h2>
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2017 - Now</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Founder</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Birran.com</span>
+                    <span class="block font-body text-black">IT Consultants and Digital Solutions. A provider of
+                      consulting products and services focused on machine learning (ML) and artificial intelligence (AI)
+                      to help optimize promotional, operational and HR needs</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2019 - Now</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Direktur</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">CV. Birran Cipta Informatika</span>
+                      <span class="block font-body text-black">Software development, e-commerce application development,
+                        computer programming, information/computer security consulting and computer facilities
+                        management.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2016 - Now</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Lerture</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Computer Education, FKIP, ULM</span>
+                    <span class="block font-body text-black">Teaching: Web Programming, Expert System, Database, Mobile
+                      Programing, Multimedia Processing (Teks, Image, Audio, Video Processing), Simulation</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2009 - 2011</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Trainer &
+                      Programmer</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Jogja IT Training Center, Indonesia</span>
+                      <span class="block font-body text-black">Web Prgramming, Java, J2ME, GIS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2012 - 2016</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Founder</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">CV. Mitra IT Indonesia</span>
+                    <span class="block font-body text-black">Web and mobile based application developer</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2011 - 2013</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Project
+                      Manager</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Veo Crative, Yogyakarta - Indonesia</span>
+                      <span class="block font-body text-black">Web and mobile based application developer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2012 - 2013</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Web Programmer</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">PT. Lantabura Media, Yogyakarta, Indonesia</span>
+                    <span class="block font-body text-black">Development bisnisukm.com</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative  md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2011 - 2013</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Trainer</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Bug Training Center Jogja,Indonesia</span>
+                      <span class="block font-body text-black">PHP & Java</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2012 - 2013</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Web Programmer</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Innovation Center Amikom Yogyakarta</span>
+                    <span class="block font-body text-black">Develop websites (Codeigniter & Smarty Engine) & Android
+                      applications with MySql & Sql Server databases. Develop amikom.ac.id, elearning.amikom.ac.id,
+                      diglib.amikom.ac.id, alumni.amikom.ac.id, repository.amikom.ac.id, amikom social, etc.. </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative  md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2011 - 2012</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Lab assistant</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">STMIK Amikom Yogyakarta</span>
+                      <span class="block font-body text-black">Web Programming</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2019 - 2021</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Project Manager</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">PT. Menara Pasifik Perkasa, Jawa Timur,
+                      Indonesia</span>
+                    <span class="block font-body text-black">Software developer</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative  md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2010 - 2011</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Lab assistant</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Universitas Kristen Duta Wacana</span>
+                      <span class="block font-body text-black">Development E-Eommerce</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-16 md:py-20" id="researchgrants">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          LIST OF FEATURED RESEARCH GRANTS
+        </h2>
+
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2022</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Kemampuan Penyelesaian
+                    Masalah Matematika Siswa SMP dalam Pembelajaran Kontekstual Lahan Basah Berbantuan Multimedia
+                    Interaktif [Middle School Students' Mathematical Problem Solving Ability in Wetland Contextual
+                    Learning Assisted by Interactive Multimedia]</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">IDR 30.000.000</span>
+                    <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2021</span>
+                    <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Pengembangan E-Modul
+                      dengan Laboratorium Virtual untuk Mengoptimalkan Pembelajaran Fisika dan Literasi Sains Konteks
+                      Lahan Basah di Masa Pandemi Covid-19 [Development of E-Modules with Virtual Laboratories to
+                      Optimize Physics Learning and Science Literacy in Wetlands Context during the Covid-19
+                      Pandemic]</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">IDR 30.000.000</span>
+                      <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2020</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Pengembangan Media
+                    Pembelajaran Interaktif Berkonteks Lahan
+                    Basah dalam Pembelajaran Bilangan dan Himpunan untuk Siswa
+                    Smp/Mts Kota Banjarmasin [Development of Interactive Learning
+                    Media with Wetland Context in Learning Numbers and Sets for Junior
+                    High School Students in Banjarmasin City]</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">IDR 36.000.000</span>
+                    <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2020</span>
+                    <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Penerapan Model
+                      Pembelajaran Berpusat Pada Mahasiswa dalam
+                      Pengembangan Pembelajaran Berbasis Komputer [Application of
+                      Student-Centered Learning Model in the Development of Computer-Based Learning]
+                    </span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">IDR 20.000.000</span>
+                      <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto  flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2020</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Pengembangan Media
+                    Pembelajaran Interaktif Berkonteks Lahan
+                    Basah dalam Pembelajaran Bilangan dan Himpunan untuk Siswa
+                    Smp/Mts Kota Banjarmasin [Development of Interactive Learning
+                    Media with Wetland Context in Learning Numbers and Sets for Junior
+                    High School Students in Banjarmasin City]</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">IDR 36.000.000</span>
+                    <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2020</span>
+                    <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Penerapan Model
+                      Pembelajaran Berpusat Pada Mahasiswa dalam
+                      Pengembangan Pembelajaran Berbasis Komputer [Application of
+                      Student-Centered Learning Model in the Development of Computer-Based Learning]
+                    </span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">IDR 20.000.000</span>
+                      <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto  flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2019</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Survei Pemanfaatan
+                    Teknologi Informasi dan komunikasi pada
+                    SMP/SMA/Sederajat di Kota Banjarmasin [Survey on Utilization of
+                    Information and Communication Technology in SMP/SMA/Equivalent in
+                    Banjarmasin City]</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">IDR 5.000.000</span>
+                    <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2019</span>
+                    <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Pengenalan Pola
+                      Anyaman Tikar Purun Kerajinan Tangan
+                      Masyarakat Kawasan Lahan Basah Kalimantan Selatan
+                      Menggunakan Metode Gray Level Co-Occurrence Matrices
+                      (GLCM) dan Artificial Neural Netrok (ANN) [Recognition of Purun
+                      Mats Wetlands Community Handicraft Pattern Recognition Using Gray
+                      Level Co-Occurrence Matrices (GLCM) and Artificial Neural Netrok
+                      (ANN) Methods]
+                    </span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">IDR 20.000.000</span>
+                      <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto  flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2019</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Tensorflow sebagai
+                    Library untuk Mengembangan Pembelajaran
+                    Mesin [Tensorflow as a Library for Developing Machine Learning]</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">IDR 5.000.000</span>
+                    <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2018</span>
+                    <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Penerapan Strategi
+                      Flipped Classroom dan Cooperative Learning
+                      pada Proses Pembelajaran [Application of Flipped Classroom and
+                      Cooperative Learning Strategies in the Learning Process]
+                    </span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">IDR 65.000.000</span>
+                      <span class="block font-body text-black">Funded by Kemenristekdikti Belmawa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto  flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2017</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Penggunaan Blogger
+                    Sebagai Alat untuk Pengembangan Blended
+                    Learning [Using Blogger as a Tool for Blended Learning
+                    Development]
+                  </span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">IDR 4.000.000</span>
+                    <span class="block font-body text-black">Funded by PNBP Lambung Mangkurat University </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2016</span>
+                    <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Kajian Kurikulum
+                      Sekolah Menengah Kejuruan di Kota
+                      Banjarmasin [Study of Vocational High School Curriculum in
+                      Banjarmasin City]
+                    </span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">IDR 5.000.000</span>
+                      <span class="block font-body text-black">Funded by Kemenristekdikti Belmawa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container py-16 md:py-20 bg-grey-50" id="project">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          LIST OF FEATURED INDUSTRIAL PROJECT
+        </h2>
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2022 - Now</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">IT Consultant</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">PT PJBS Kapuas, Kalimantan Tengah,
+                      Indonesia</span>
+                    <span class="block font-body text-black">• Sistem Manajemen Informasi Limbah [Waste Information
+                      Management System]
+                    </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2021 - Now</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">IT Consultant</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">UPT PLN Kalsel-Teng, Kalimantan,
+                        Indonesia</span>
+                      <span class="block font-body text-black">• Sistem Informasi Kinerja Unit [Unit Performance
+                        Information
+                        System] <br>
+                        • Sistem Informasi Working Permit (Web and Mobile Apps)
+                        [Working Permit Information System (Web and Mobile Apps)]</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2020 - 2021</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">IT Consultant</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">PT.PJB Services, Sidoarjo, Jawa Timur,
+                      Indonesia</span>
+                    <span class="block font-body text-black">-</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2019 - Now</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">IT Consultant</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">PT PLN UPDK BARITO, Banjarmasin,
+                        Indonesia</span>
+                      <span class="block font-body text-black">• Aplikasi Manajemen Data Keluar Masuk Orang
+                        [People Log Out Data Management Application] <br>
+                        • Aplikasi Manajemen Data Keluar Masuk Barang
+                        [Goods Incoming Data Management Application] <br>
+                        • Aplikasi Manajemen Data Tamu\
+                        [Guest Data Management Application] <br>
+                        • Aplikasi Ijin Kerja (APIK)
+                        [Work Permit Application (APIK)]
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2019 - Now</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">IT Consultant</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">FEBI IAIN Palangkaraya, Indonesia</span>
+                    <span class="block font-body text-black">• Website <br>
+                      • Aplikasi Manajement Surat
+                      [Mail Management Application]
+                    </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2013</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">IT Consultant</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">PT. MVS Pictures Yogyakarta, Indonesia</span>
+                      <span class="block font-body text-black">• Project Management Application</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2013</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">IT Consultant</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Proklamasi '45 University Yogyakarta,
+                      Indonesia</span>
+                    <span class="block font-body text-black">• Website</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative  md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2013</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">IT Consultant</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Balai Sabo, PUSAIR Yogyakarta, Indonesia</span>
+                      <span class="block font-body text-black">• Merapi Monitoring Application</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container py-16 md:py-20" id="membership">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          PROFESSIONAL MEMBERSHIP
+        </h2>
+
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2021 - Now</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Member</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Electronics and Instrumentation Support Society
+                      (IndoCEISS)</span>
+                    <span class="block font-body text-black">• Professional organization in the field of computers,
+                      electronics
+                      and instrumentation in Indonesia. </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2021 - Now</span>
+                    <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Member</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">IEEE</span>
+                      <span class="block font-body text-black">• Professional organization in the field of Computer
+                        Science &
+                        Information Technology
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2018 - Now</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Member</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">APTIKOM (Association of Higher Education
+                      Informatics and
+                      Computers)</span>
+                    <span class="block font-body text-black">• Professional organization in the field of Computer
+                      Science &
+                      Information Technology</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container py-16 md:py-20 bg-grey-50" id="scholarship">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          LIST OF FEATURED SCHOLARSHIP AND AWARDS
+        </h2>
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2022</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">ToT AI Machine
+                    Learning Oracle</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Digital Talent Scolarship, Ministry of
+                      Communication and Information of
+                      the Republic of Indonesia</span>
+                    <span class="block font-body text-black">• Thematic Academy Training - Artificial Intelligence Data
+                      Scientist Scheme For Lecturers And Instructors
+                    </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2021</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">ToT Data Scientist
+                      AI</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Digital Talent Scolarship, Ministry of
+                        Communication and Information of
+                        the Republic of Indonesia</span>
+                      <span class="block font-body text-black">• Thematic Academy Training - Artificial Intelligence
+                        Data
+                        Scientist Scheme For Lecturers And Instructors</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2022</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">ToT Cloud Computing
+                  </span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Digital Talent Scolarship, Ministry of
+                      Communication and Information of
+                      the Republic of Indonesia</span>
+                    <span class="block font-body text-black">• Cloud Computing with AWS </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2012</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Finalist Innoserve
+                      Contest</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Taipei, Taiwan</span>
+                      <span class="block font-body text-black">• SHAND - An Artificial Intelligence application that is
+                        connected
+                        to Kinect as a medium of communication between the speech
+                        impaired and ordinary users.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container py-16 md:py-20" id="VOLUNTEERING">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          VOLUNTEERING
+        </h2>
+
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2017 - 2021</span>
+                  <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Tim IT</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Implementation of the Professional Education
+                      Program Academic
+                      Orientation. Teacher (PPG) FKIP ULM</span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2016 - 2020</span>
+                    <span class="block pt-2 font-header text-md font-bold uppercase text-[#4F1AE2]">Coordinator</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Coordinator of Partnership Cooperation at the
+                        Provincial Management
+                        of ICT Volunteers for the South Kalimantan Region FKIP ULM
+                        Commissariat</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container py-16 md:py-20 bg-grey-50" id="books">
+        <h2 class="text-center font-header text-4xl font-semibold uppercase text-[#4F1AE2] sm:text-5xl lg:text-6xl">
+          LIST OF BOOKS
+        </h2>
+        <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">2022</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Sadikin A. & Wiranda,
+                    N.</span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black"> Sistem Informasi Manajemen [Management
+                      information
+                      System], K-Media, Yogyakarta, ISBN: 978-623-316-767-3</span>
+                    <span
+                      class="block font-body text-black">https://isbn.perpusnas.go.id/Account/SearchBuku?searchTxt=978-623-316-767-
+                      3&searchCat=ISBN
+                    </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative flex md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">2021</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Wiranda, N.</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black"> Pemrograman Phyton : pemrograman Phyton dari
+                        pemula hingga
+                        menengah dalam 10 hari [Python programming : Python programming from beginner to
+                        intermediate in 10 days], LMU Press, ISBN: 978-623-7533-70-2.
+                      </span>
+                      <span
+                        class="block font-body text-black">https://isbn.perpusnas.go.id/Account/SearchBuku?searchTxt=978-623-7533-70-
+                        2+&searchCat=ISBN
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mx-auto flex w-full flex-col lg:w-2/3">
+          <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+          <div class="mt-8 flex flex-col text-center md:flex-row md:text-left gap-y-10">
+            <div class="md:w-2/5">
+              <div class="mt-1 md:flex lg:flex">
+                <div class="md:-mt-1 md:pr-8 lg:text-right md:text-right">
+                  <span class="block font-body font-bold text-grey-40">Compiled from 2019-2021, Now in the production
+                    process by publisher Andi
+                    Offset Yogyakarta Indonesia.</span>
+                  <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Wiranda, N.
+                  </span>
+                  <div class="pt-2">
+                    <span class="block font-body font-bold text-black">Arsitektur microservice - Fleksibelitas Perangkat
+                      Lunak
+                      [Architecture of Microservices - Software Flexibility]
+                    </span>
+                  </div>
+                </div>
+                <i class="bx bxs-left-arrow hidden text-[#4F1AE2] md:block"></i>
+              </div>
+            </div>
+            <div class="md:w-3/5">
+              <div class="relative md:pl-18">
+                <span
+                  class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+                <div class="mt-1 md:flex lg:flex">
+                  <i class="bx bxs-right-arrow hidden text-[#4F1AE2] md:block"></i>
+                  <div class="md:-mt-1 md:pl-8">
+                    <span class="block font-body font-bold text-grey-40">On Drafting</span>
+                    <span class="block pt-2 font-header text-xl font-bold uppercase text-[#4F1AE2]">Wiranda, N. & Adini
+                      H., M.</span>
+                    <div class="pt-2">
+                      <span class="block font-body font-bold text-black">Arsitektur microservice - Fleksibelitas
+                        Perangkat
+                        Lunak [Architecture of Microservices - Software Flexibility]</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-[#4F1AE2]">
+        <div class="container flex flex-col justify-between py-6 sm:flex-row">
+          <p class="text-center font-body text-white md:text-left">
+            © Copyright 2023. All right reserved.
+          </p>
+          <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+            <a href="/">
+              <i class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
+            </a>
+            <a href="/" class="pl-4">
+              <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+            </a>
+            <a href="/" class="pl-4">
+              <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
+            </a>
+            <a href="/" class="pl-4">
+              <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
+            </a>
+            <a href="/" class="pl-4">
+              <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
